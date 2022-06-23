@@ -1,0 +1,166 @@
+.header-content {
+    transition: all 0.3s ease 0s;
+}
+.header-content__burger-menu-header {
+    position: absolute;
+    top: -1500px;
+    right: 0;
+    background-color: #191A1E;
+    transition: all 0.3s ease 0s;
+}
+.header-content__burger-menu-header.active {
+    right: 0;
+    top: -20px;
+    width: 40%;
+    z-index: 999;
+    transition: all 0.3s ease 0s;
+}
+.wrapper-nav{
+    z-index: 1200;
+    width: 100%;
+    height: 100%;
+}
+.header-content__burger-menu-list {
+    display: block;
+    padding: 20% 2%;
+    height: 584px;
+    text-align: left;
+    right: 0;
+    top: -1000px;
+    list-style-type:none
+}
+.header-content__burger-menu-list > li {
+    list-style: none;
+    margin: 0 0 20px 0;
+    line-height: 2.5;
+}
+.header-content__burger-menu-link:hover {
+    border-bottom: 1px solid #fff;
+    width: 82%;
+}
+.header-content__burger-menu-link:hover {
+    color: #fff;
+}
+.header-content__burger-menu-link {
+    color: rgba(255, 255, 255, 0.3);
+    font-size: 18px;
+    height: 30px;
+    text-decoration: none;
+    width: 80%;
+    margin-left: 11%;
+    cursor: pointer;
+}
+
+.header-content__burger-menu-strip {
+    display: block;
+    position: relative;
+    width: 25px;
+    height: 20px;
+    z-index: 3;
+    cursor: pointer;
+    margin-right: 313px;
+    margin-top: 10px;
+    transition: all 0.3s ease 0s;
+
+}
+.header-content__spanMenuFirst {
+    position: absolute;
+    background-color: #212733;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    top: -3px;
+    transition: all 0.3s ease 0s;
+}
+.header-content__spanMenuSecond {
+    position: absolute;
+    background-color: #212733;
+    left: 5px;
+    width: 75%;
+    height: 2px;
+    top: 5px;
+    transition: all 0.3s ease 0s;
+}
+.header-content__spanMenuThird {
+    position: absolute;
+    background-color: #212733;
+    left: 10px;
+    width: 50%;
+    height: 2px;
+    top: 13px;
+    transition: all 0.3s ease 0s;
+}
+.header-content__spanMenuFirst.active,.header-content__spanMenuSecond.active, .header-content__spanMenuThird.active {
+    display: none;
+}
+.header-content__spanMenuFirst.activeBurger,.header-content__spanMenuSecond.activeBurger, .header-content__spanMenuThird.activeBurger {
+    background-color: #fff;
+}
+
+.header-content__close-menu.active {
+    display: block;
+    position: absolute;
+    left: 11%;
+    cursor: pointer;
+    top: 8%;
+    z-index: 1000;
+    transition: all 0.3s ease 0s;
+    width: 30px;
+    height: 20px;
+}
+.header-content__close-menu.active::before {
+    transform: rotate(45deg);
+    top: 9px;
+    z-index: 1200;
+    background-color: rgba(255, 255, 255, 0.3);
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    left: 2px;
+    transition: all 0.3s ease 0s;
+}
+.header-content__close-menu.active::after {
+    transform: rotate(-45deg);
+    bottom: 9px;
+    z-index: 1200;
+    background-color: rgba(255, 255, 255, 0.3);
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    left: 2px;
+    transition: all 0.3s ease 0s;
+}
+
+.header-content__button-order{
+    height: 60px;
+    text-align: left;
+    padding-left: 15px;
+    position: absolute;
+    bottom: 28%;
+    left: 11%;
+    cursor: pointer;
+    visibility: hidden;
+}
+.header-content__burger-menu-icons{
+    display: none;
+}
+.header-content__burger-menu-icons.active{
+    display: block;
+    position: absolute;
+    bottom: 13%;
+    left: 14%;
+    text-decoration: none;
+}
+.header-content__special-offer{
+    width: 100%;
+    height: 250px;
+}
+.header-content__button-order.active{
+    visibility: visible;
+}
+.header-content__special-offer-variant.active{
+    color: #fff;
+    border-bottom: 1px solid #fff;
+}
